@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 const Header = () => {
   return (
     <header className="text-gray-600 body-font">
@@ -18,9 +20,12 @@ const Header = () => {
           <span className="ml-3 text-xl">정하승의 포트폴리오</span>
         </a>
         <nav className="md:ml-auto flex flex-wrap items-center text-base justify-center">
-          <a className="mr-5 hover:text-gray-900">Home</a>
-          <a className="mr-5 hover:text-gray-900">Project</a>
-          <a className="mr-5 hover:text-gray-900">Contact</a>
+          <Link href="/" className="mr-5 font-bold hover:text-gray-900">
+            Home
+          </Link>
+          <Link href="/project" className="mr-5 font-bold hover:text-gray-900">
+            Project
+          </Link>
         </nav>
         <button className="inline-flex items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0">
           Button
