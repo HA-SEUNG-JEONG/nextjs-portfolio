@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 import Animation from "./Animation";
 
@@ -13,7 +14,7 @@ const Content = () => {
           </h1>
           <div className="flex justify-center">
             <button className="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">
-              프로젝트 보러가기
+              <Link href="/project">프로젝트 보러가기</Link>
             </button>
           </div>
         </div>
