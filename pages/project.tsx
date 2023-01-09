@@ -110,10 +110,6 @@ export const getStaticProps: GetStaticProps = async () => {
   const response = await fetch(`https://api.notion.com/v1/databases/${DATABASE_ID}/query`, options);
   const projects = await response.json();
 
-  const projectNames = projects.results.map(
-    (project: Page) => project.properties["이름"].title[0].plain_text
-  );
-
   return {
     props: { projects },
   };
