@@ -1,5 +1,7 @@
 import Link from "next/link";
 
+const currentYear = new Date().getFullYear();
+
 const Footer = () => {
   return (
     <footer className="body-font">
@@ -7,7 +9,7 @@ const Footer = () => {
         <div className="container mx-auto flex flex-col flex-wrap py-4 px-5 sm:flex-row">
           <Link href="/">
             <p className="text-center text-sm text-gray-500 sm:text-left">
-              2022 정하승의 포트폴리오
+              {currentYear} 정하승의 포트폴리오
             </p>
           </Link>
           <span className="mt-2 inline-flex justify-center sm:ml-auto sm:mt-0 sm:justify-start">
