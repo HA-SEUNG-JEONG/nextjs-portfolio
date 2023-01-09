@@ -11,10 +11,8 @@ interface User {
 
 interface External {
   type: string;
-  cover: {
-    external: {
-      url: string;
-    };
+  external: {
+    url: string;
   };
 }
 
