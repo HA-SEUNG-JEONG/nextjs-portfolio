@@ -7,21 +7,20 @@ const ProjectItem = ({ data }: { data: Page }) => {
   const githubLink = data.properties.URL.url;
   const description = data.properties.Description.rich_text[0].plain_text;
   const tags = data.properties["태그"].multi_select;
-  const imgsrc = (data.cover?.external || data.cover).url;
+  const imgsrc = data.cover?.file?.url || data.cover.external.url;
 
   return (
     <div className="project-card">
-      <section>
+      <section className="w-full">
         <Image
-          priority
           className="rounded-t-xl"
           src={imgsrc}
           alt="coverImage"
           quality={100}
-          width={100}
-          height={50}
+          width={50}
+          height={30}
           layout="responsive"
-          objectFit="cover"
+          objectFit="contain"
         />
       </section>
 
@@ -29,9 +28,9 @@ const ProjectItem = ({ data }: { data: Page }) => {
         <h1 className="text-xl font-bold">{projectTitle}</h1>
         <h3 className="text-md mt-3">{description}</h3>
         <Link href={githubLink}>깃허브 링크</Link>
-        <div className="mt-2 flex items-start space-x-1">
+        <div className="mt-2 flex items-start space-x-2">
           {tags.map((tag: any) => (
-            <h1 className="w-30 mr-2 rounded-md bg-sky-200 px-2 py-1 dark:bg-sky-700 " key={tag.id}>
+            <h1 className="w-30 rounded-md bg-sky-200 px-2 py-1 dark:bg-sky-700 " key={tag.id}>
               {tag.name}
             </h1>
           ))}
