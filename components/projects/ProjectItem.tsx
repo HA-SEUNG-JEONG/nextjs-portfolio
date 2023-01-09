@@ -7,21 +7,24 @@ const ProjectItem = ({ data }: { data: Page }) => {
   const githubLink = data.properties.URL.url;
   const description = data.properties.Description.rich_text[0].plain_text;
   const tags = data.properties["태그"].multi_select;
-  const imgsrc = data.cover.cover?.external || data.cover;
-  console.log(imgsrc);
+  const imgsrc = (data.cover?.external || data.cover).url;
 
   return (
     <div className="project-card">
-      <Image
-        className="rounded-t-xl"
-        src={imgsrc.external.url}
-        alt="coverImage"
-        quality={100}
-        width={100}
-        height={60}
-        layout="responsive"
-        objectFit="cover"
-      />
+      <section>
+        <Image
+          priority
+          className="rounded-t-xl"
+          src={imgsrc}
+          alt="coverImage"
+          quality={100}
+          width={100}
+          height={50}
+          layout="responsive"
+          objectFit="cover"
+        />
+      </section>
+
       <div className="flex w-full flex-col p-4">
         <h1 className="text-xl font-bold">{projectTitle}</h1>
         <h3 className="text-md mt-3">{description}</h3>
