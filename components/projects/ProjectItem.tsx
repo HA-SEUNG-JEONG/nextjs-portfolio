@@ -1,14 +1,15 @@
 import Image from "next/legacy/image";
 import Link from "next/link";
-import { Page } from "../../pages/Project";
+import { Page } from "../../pages/project";
 
 const ProjectItem = ({ data }: { data: Page }) => {
   const projectTitle = data.properties["이름"].title[0].plain_text;
   const githubLink = data.properties.URL.url;
   const description = data.properties.Description.rich_text[0].plain_text;
   const tags = data.properties["태그"].multi_select;
-
   const imgsrc = data.cover.cover?.external || data.cover;
+  console.log(imgsrc);
+
   return (
     <div className="project-card">
       <Image
