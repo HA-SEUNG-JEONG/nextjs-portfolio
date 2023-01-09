@@ -1,4 +1,4 @@
-import { GetStaticProps } from "next";
+import { GetServerSideProps, GetStaticProps } from "next";
 import Head from "next/head";
 import Layout from "../components/layout";
 import ProjectItem from "../components/projects/ProjectItem";
@@ -10,8 +10,12 @@ interface User {
 }
 
 interface External {
+  url: string;
   type: string;
   external: {
+    url: string;
+  };
+  file: {
     url: string;
   };
 }
@@ -93,7 +97,7 @@ const Project = ({ projects }: { projects: any }) => {
   );
 };
 
-export const getStaticProps: GetStaticProps = async () => {
+export const getServerSideProps: GetServerSideProps = async () => {
   const options = {
     method: "POST",
     headers: {
