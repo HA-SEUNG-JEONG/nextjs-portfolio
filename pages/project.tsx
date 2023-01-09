@@ -68,10 +68,21 @@ export interface Page {
   parent: DatabaseId | null;
   archived: boolean;
   properties: {
-    Description: RichText;
-    URL: URL;
-    태그: MultiSelect;
-    이름: Title;
+    description: RichText;
+    url: URL;
+    tag: MultiSelect;
+    name: Title;
+    githubLink: {
+      rich_text: [
+        {
+          text: {
+            link: {
+              url: string;
+            };
+          };
+        }
+      ];
+    };
   };
   url: string;
   results: string;
