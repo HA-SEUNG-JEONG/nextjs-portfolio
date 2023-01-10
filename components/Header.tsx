@@ -3,12 +3,11 @@ import DarkModeToggleButtion from "./DarkModeToggleButtion";
 
 const Header = () => {
   return (
-    <header className="text-gray-600 body-font">
-      <div className="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+    <header className="body-font text-gray-600">
+      <div className="container mx-auto flex flex-col flex-wrap items-center p-5 md:flex-row">
         <Link
           href="/"
-          className="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0"
-        >
+          className="title-font mb-4 flex items-center font-medium text-gray-900 md:mb-0">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
@@ -16,17 +15,17 @@ const Header = () => {
             strokeLinecap="round"
             strokeLinejoin="round"
             strokeWidth="2"
-            className="w-10 h-10 text-white p-2 bg-indigo-500 rounded-full"
-            viewBox="0 0 24 24"
-          >
+            className="h-10 w-10 rounded-full bg-indigo-500 p-2 text-white"
+            viewBox="0 0 24 24">
             <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
           </svg>
           <span className="ml-3 text-xl">정하승의 포트폴리오</span>
         </Link>
 
-        <nav className="md:ml-auto flex flex-wrap items-center text-xl justify-center space-x-6  bg-primary font-bold">
+        <nav className="bg-primary flex flex-wrap items-center justify-center space-x-6 text-xl  font-bold md:ml-auto">
           <Link href="/">홈</Link>
           <Link href="/project">프로젝트</Link>
+          <Link href="/skill">스킬</Link>
           <DarkModeToggleButtion />
         </nav>
       </div>
