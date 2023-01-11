@@ -9,7 +9,8 @@ const ProjectItem = ({ data }: { data: Page }) => {
   const tags = data.properties.tag.multi_select;
   const imgsrc = data.cover?.file?.url || data.cover.external.url;
   const githubLink = data.properties.githubLink.rich_text[0].text.link.url;
-
+  const start = data.properties.period.date.start;
+  const end = data.properties.period.date.end;
   return (
     <article className="project-card">
       <section className="w-full">
@@ -43,6 +44,9 @@ const ProjectItem = ({ data }: { data: Page }) => {
               {tag.name}
             </h1>
           ))}
+        </section>
+        <section className="mt-3 font-bold text-slate-300">
+          프로젝트 기간 : {start} ~ {end ? end : ""}
         </section>
       </section>
     </article>

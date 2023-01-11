@@ -83,6 +83,12 @@ export interface Page {
         }
       ];
     };
+    period: {
+      date: {
+        start: string;
+        end: string;
+      };
+    };
   };
   url: string;
   results: string;
