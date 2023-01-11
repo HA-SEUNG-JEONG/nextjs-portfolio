@@ -29,12 +29,17 @@ const ProjectItem = ({ data }: { data: Page }) => {
         <h1 className="text-xl font-bold">{projectTitle}</h1>
         <section className="flex flex-col space-y-2">
           <h3 className="text-md mt-3">{description}</h3>
-          <Link href={deployLink}>배포 링크</Link>
-          <Link href={githubLink}>깃허브 링크</Link>
+          <Link className="hover:text-slate-300  " href={deployLink}>
+            배포 링크
+          </Link>
+          <Link className="hover:text-slate-300 " href={githubLink}>
+            깃허브 링크
+          </Link>
         </section>
+
         <section className="mt-2 flex items-start space-x-2">
           {tags.map((tag: any) => (
-            <h1 className="w-30 rounded-md bg-sky-200 px-2 py-1 dark:bg-sky-700 " key={tag.id}>
+            <h1 className="w-30 rounded-md bg-sky-200 px-2 py-1 dark:bg-sky-700" key={tag.id}>
               {tag.name}
             </h1>
           ))}

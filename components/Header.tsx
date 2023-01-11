@@ -22,10 +22,16 @@ const Header = () => {
           <span className="ml-3 text-xl">정하승의 포트폴리오</span>
         </Link>
 
-        <nav className="bg-primary flex flex-wrap items-center justify-center space-x-6 text-xl  font-bold md:ml-auto">
-          <Link href="/">홈</Link>
-          <Link href="/project">프로젝트</Link>
-          <Link href="/skill">스킬</Link>
+        <nav className="bg-primary flex flex-wrap items-center justify-center space-x-6 text-xl font-bold md:ml-auto">
+          <Link className="hover:text-gray-300" href="/">
+            홈
+          </Link>
+          <Link className="hover:text-gray-300" href="/project">
+            프로젝트
+          </Link>
+          <Link className="hover:text-gray-300" href="/skill">
+            스킬
+          </Link>
           <DarkModeToggleButtion />
         </nav>
       </div>
