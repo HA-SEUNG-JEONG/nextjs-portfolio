@@ -20,7 +20,7 @@ footer {
 }
 
 .project-card {
-  @apply m-6 flex w-full transform flex-col rounded-md border border-gray-300 p-4 transition duration-300 hover:text-blue-500 hover:shadow-lg dark:border-gray-200/50 dark:hover:shadow-gray-400/40;
+  @apply m-6 flex w-full transform flex-col rounded-md border border-gray-300 p-4 transition duration-300 hover:text-blue-500 dark:border-gray-200/50 dark:hover:shadow-gray-400/40;
 }
 
 a {
