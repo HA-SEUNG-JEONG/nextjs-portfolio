@@ -24,13 +24,16 @@ const Header = () => {
 
         <nav className="bg-primary flex flex-wrap items-center justify-center space-x-6 text-xl font-bold md:ml-auto">
           <Link className="hover:text-gray-300" href="/">
-            홈
+            Home
           </Link>
           <Link className="hover:text-gray-300" href="/project">
-            프로젝트
+            Project
           </Link>
           <Link className="hover:text-gray-300" href="/skill">
-            스킬
+            Skills
+          </Link>
+          <Link className="hover:text-gray-300" href="/experience">
+            Other Experience
           </Link>
           <DarkModeToggleButtion />
         </nav>
