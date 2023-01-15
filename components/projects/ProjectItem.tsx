@@ -7,7 +7,7 @@ const ProjectItem = ({ data }: { data: Page }) => {
   const deployLink = data.properties.url.url;
   const description = data.properties.description.rich_text[0].plain_text;
   const tags = data.properties.tag.multi_select;
-  const imgsrc = data.cover?.file?.url || data.cover.external.url;
+  const imgSrc = data.cover?.file?.url || data.cover.external.url;
   const githubLink = data.properties.githubLink.rich_text[0].text.link.url;
   const start = data.properties.period.date.start;
   const end = data.properties.period.date.end;
@@ -16,13 +16,15 @@ const ProjectItem = ({ data }: { data: Page }) => {
       <section className="w-full">
         <Image
           className="rounded-t-xl"
-          src={imgsrc}
+          src={imgSrc}
           alt="coverImage"
           quality={100}
           width={50}
-          height={30}
+          height={50}
           layout="responsive"
           objectFit="contain"
+          placeholder="blur"
+          blurDataURL="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mO8UA8AAiUBUcc3qzwAAAAASUVORK5CYII=" // 추가
         />
       </section>
 
@@ -30,10 +32,10 @@ const ProjectItem = ({ data }: { data: Page }) => {
         <h1 className="text-xl font-bold">{projectTitle}</h1>
         <section className="flex flex-col space-y-2">
           <h3 className="text-md mt-3">{description}</h3>
-          <Link className="hover:text-slate-300  " href={deployLink}>
+          <Link className="hover:text-slate-300" href={deployLink}>
             배포 링크
           </Link>
-          <Link className="hover:text-slate-300 " href={githubLink}>
+          <Link className="hover:text-slate-300" href={githubLink}>
             깃허브 링크
           </Link>
         </section>
