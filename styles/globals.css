@@ -16,7 +16,7 @@ h6 {
 }
 
 footer {
-  @apply bg-gray-100 text-gray-600 dark:bg-gray-600/50 dark:text-white;
+  @apply bg-gray-100 dark:bg-[#303740] dark:text-white;
 }
 
 .project-card {
