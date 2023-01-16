@@ -14,7 +14,7 @@ const Content = () => {
           </h1>
           <div className="flex justify-center">
             <button className="inline-flex rounded border-0 bg-[#0C0FB0] py-2 px-6 text-lg hover:bg-[#31339B] focus:outline-none">
-              <Link className="text-black dark:text-white " href="/project">
+              <Link className="text-[#DBDCE6] dark:text-white" href="/project">
                 프로젝트 보러가기
               </Link>
             </button>
