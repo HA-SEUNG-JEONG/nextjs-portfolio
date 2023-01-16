@@ -26,16 +26,22 @@ const Header = () => {
 
         <nav className="flex flex-wrap items-center justify-center space-x-6 text-xl font-bold md:ml-auto">
           <Link href="/">
-            <span className="text-[#343232] hover:text-gray-500 dark:text-[#DEDCE8]">Home</span>
+            <span className="text-[#343232] hover:text-gray-500 dark:text-[#DEDCE8] dark:hover:text-gray-400">
+              Home
+            </span>
           </Link>
           <Link href="/projects">
-            <span className="text-[#343232] hover:text-gray-500 dark:text-[#DEDCE8]">Projects</span>
+            <span className="text-[#343232] hover:text-gray-500 dark:text-[#DEDCE8] dark:hover:text-gray-400">
+              Projects
+            </span>
           </Link>
           <Link className="" href="/skills">
-            <span className="text-[#343232] hover:text-gray-500 dark:text-[#DEDCE8]">Skills</span>
+            <span className="text-[#343232] hover:text-gray-500 dark:text-[#DEDCE8] dark:hover:text-gray-400">
+              Skills
+            </span>
           </Link>
-          <Link href="/experience">
-            <span className="text-[#343232] hover:text-gray-500 dark:text-[#DEDCE8]">
+          <Link href="/experiences">
+            <span className="text-[#343232] hover:text-gray-500 dark:text-[#DEDCE8] dark:hover:text-gray-400">
               Other Experience
             </span>
           </Link>
