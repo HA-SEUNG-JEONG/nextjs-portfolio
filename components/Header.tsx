@@ -3,7 +3,7 @@ import DarkModeToggleButtion from "./DarkModeToggleButtion";
 
 const Header = () => {
   return (
-    <header className="body-font text-gray-600">
+    <header className="body-font text-gray-600 dark:bg-slate-800">
       <div className="container mx-auto flex flex-col flex-wrap items-center p-5 md:flex-row">
         <Link
           href="/"
