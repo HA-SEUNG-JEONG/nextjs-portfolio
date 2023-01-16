@@ -19,21 +19,25 @@ const Header = () => {
             viewBox="0 0 24 24">
             <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
           </svg>
-          <span className="ml-3 text-xl text-[#D0D8DF]">정하승의 포트폴리오</span>
+          <span className="ml-3 text-xl text-[#343232] dark:text-[#DEDCE8]">
+            정하승의 포트폴리오
+          </span>
         </Link>
 
         <nav className="flex flex-wrap items-center justify-center space-x-6 text-xl font-bold md:ml-auto">
           <Link href="/">
-            <span className="text-[#D0D8DF] hover:text-gray-500">Home</span>
+            <span className="text-[#343232] hover:text-gray-500 dark:text-[#DEDCE8]">Home</span>
           </Link>
           <Link href="/projects">
-            <span className="text-[#D0D8DF] hover:text-gray-500">Projects</span>
+            <span className="text-[#343232] hover:text-gray-500 dark:text-[#DEDCE8]">Projects</span>
           </Link>
           <Link className="" href="/skills">
-            <span className="text-[#D0D8DF]  hover:text-gray-500">Skills</span>
+            <span className="text-[#343232] hover:text-gray-500 dark:text-[#DEDCE8]">Skills</span>
           </Link>
           <Link href="/experience">
-            <span className="text-[#D0D8DF] hover:text-gray-500">Other Experience</span>
+            <span className="text-[#343232] hover:text-gray-500 dark:text-[#DEDCE8]">
+              Other Experience
+            </span>
           </Link>
           <DarkModeToggleButtion />
         </nav>
