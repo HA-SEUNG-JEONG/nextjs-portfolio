@@ -19,21 +19,21 @@ const Header = () => {
             viewBox="0 0 24 24">
             <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
           </svg>
-          <span className="ml-3 text-xl">정하승의 포트폴리오</span>
+          <span className="ml-3 text-xl text-[#D0D8DF]">정하승의 포트폴리오</span>
         </Link>
 
-        <nav className="bg-primary flex flex-wrap items-center justify-center space-x-6 text-xl font-bold md:ml-auto">
-          <Link className="hover:text-gray-300" href="/">
-            Home
+        <nav className="flex flex-wrap items-center justify-center space-x-6 text-xl font-bold md:ml-auto">
+          <Link href="/">
+            <span className="text-[#D0D8DF] hover:text-gray-500">Home</span>
           </Link>
-          <Link className="hover:text-gray-300" href="/project">
-            Project
+          <Link href="/projects">
+            <span className="text-[#D0D8DF] hover:text-gray-500">Projects</span>
           </Link>
-          <Link className="hover:text-gray-300" href="/skill">
-            Skills
+          <Link className="" href="/skills">
+            <span className="text-[#D0D8DF]  hover:text-gray-500">Skills</span>
           </Link>
-          <Link className="hover:text-gray-300" href="/experience">
-            Other Experience
+          <Link href="/experience">
+            <span className="text-[#D0D8DF] hover:text-gray-500">Other Experience</span>
           </Link>
           <DarkModeToggleButtion />
         </nav>
