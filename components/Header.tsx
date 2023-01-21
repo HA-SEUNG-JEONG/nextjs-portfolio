@@ -19,9 +19,6 @@ const Header = () => {
             viewBox="0 0 24 24">
             <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
           </svg>
-          <span className="ml-3 text-xl text-[#343232] dark:text-[#DEDCE8]">
-            정하승의 포트폴리오
-          </span>
         </Link>
 
         <nav className="flex flex-wrap items-center justify-center space-x-6 text-xl font-bold md:ml-auto">
