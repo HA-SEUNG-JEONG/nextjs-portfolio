@@ -15,10 +15,6 @@ h6 {
   @apply text-slate-600 dark:text-white;
 }
 
-footer {
-  @apply bg-gray-100 dark:bg-[#303740] dark:text-white;
-}
-
 .project-card {
   @apply m-6 flex w-full transform flex-col rounded-md border border-gray-300 p-4 transition duration-300 hover:text-blue-500 dark:border-gray-200/50 dark:hover:shadow-gray-400/40;
 }

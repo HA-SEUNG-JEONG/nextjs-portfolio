@@ -1,4 +1,3 @@
-import Footer from "./Footer";
 import Header from "./Header";
 
 const Layout = ({ children }: { children: JSX.Element | JSX.Element[] }) => {
@@ -6,7 +5,6 @@ const Layout = ({ children }: { children: JSX.Element | JSX.Element[] }) => {
     <div className="bg-primary">
       <Header />
       <div>{children}</div>
-      <Footer />
     </div>
   );
 };
