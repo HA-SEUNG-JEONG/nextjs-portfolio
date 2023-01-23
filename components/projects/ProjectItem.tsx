@@ -4,7 +4,9 @@ import { Page } from "../../pages/projects";
 
 const ProjectItem = ({ data }: { data: Page }) => {
   const projectTitle = data.properties.name.title[0].plain_text;
+
   const deployLink = data.properties.url.url;
+  console.log(deployLink);
   const description = data.properties.description.rich_text[0].plain_text;
   const tags = data.properties.tag.multi_select;
   const imgSrc = data.cover?.file?.url || data.cover.external.url;
@@ -42,7 +44,9 @@ const ProjectItem = ({ data }: { data: Page }) => {
 
         <section className="mt-2 flex items-start space-x-2">
           {tags.map((tag: any) => (
-            <h1 className="w-30 rounded-md bg-sky-200 px-2 py-1 dark:bg-sky-700" key={tag.id}>
+            <h1
+              className="w-30 rounded-md bg-sky-200 px-2 py-1 dark:bg-sky-700"
+              key={tag.id}>
               {tag.name}
             </h1>
           ))}
