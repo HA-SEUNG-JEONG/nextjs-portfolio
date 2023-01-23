@@ -4,9 +4,7 @@ import { Page } from "../../pages/projects";
 
 const ProjectItem = ({ data }: { data: Page }) => {
   const projectTitle = data.properties.name.title[0].plain_text;
-
   const deployLink = data.properties.url.url;
-  console.log(deployLink);
   const description = data.properties.description.rich_text[0].plain_text;
   const tags = data.properties.tag.multi_select;
   const imgSrc = data.cover?.file?.url || data.cover.external.url;
