@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 .bg-primary {
-  @apply bg-white dark:bg-slate-800;
+  @apply h-[60rem] overflow-hidden bg-white dark:h-[60rem] dark:overflow-hidden dark:bg-slate-800;
 }
 
 h1,
@@ -16,7 +16,7 @@ h6 {
 }
 
 .project-card {
-  @apply m-6 flex w-full transform flex-col rounded-md border border-gray-300 p-4 transition duration-300 hover:text-blue-500 dark:border-gray-200/50 dark:hover:shadow-gray-400/40;
+  @apply grid w-auto transform grid-cols-1 grid-rows-2 justify-center rounded-md border border-gray-300 p-4 transition duration-300 hover:text-blue-500 dark:border-gray-200/50 dark:hover:shadow-gray-400/40;
 }
 
 a {
