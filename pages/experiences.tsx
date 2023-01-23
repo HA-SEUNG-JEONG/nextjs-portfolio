@@ -1,6 +1,6 @@
 import Head from "next/head";
 import React from "react";
-import Layout from "../components/layout";
+import Layout from "../components/Layout";
 
 const experience = () => {
   return (
@@ -17,7 +17,9 @@ const experience = () => {
             <span className="text-2xl font-bold text-[#343232] dark:text-[#DEDCE8]">
               코드스테이츠
             </span>
-            <div className="font-bold text-[#343232] dark:text-[#DEDCE8]">2022.6~2022.12</div>
+            <div className="font-bold text-[#343232] dark:text-[#DEDCE8]">
+              2022.6~2022.12
+            </div>
           </div>
           <ul className="flex flex-col justify-center space-y-2 ">
             <li className="text-[#343232] dark:text-[#DEDCE8]">
@@ -32,15 +34,18 @@ const experience = () => {
             <span className="text-2xl font-bold text-[#343232] dark:text-[#DEDCE8]">
               함수형 코딩 스터디
             </span>
-            <div className="font-bold text-[#343232] dark:text-[#DEDCE8]">2022.7~2022.8</div>
+            <div className="font-bold text-[#343232] dark:text-[#DEDCE8]">
+              2022.7~2022.8
+            </div>
           </div>
           <ul className="flex flex-col justify-center space-y-2">
             <li className="text-[#343232] dark:text-[#DEDCE8]">
-              - 코드를 더 확장성 있게 짜기 위해 스터디를 통한 코드 리팩터링 연습을 했습니다.
+              - 코드를 더 확장성 있게 짜기 위해 스터디를 통한 코드 리팩터링
+              연습을 했습니다.
             </li>
             <li className="text-[#343232] dark:text-[#DEDCE8]">
-              - 가독성이 떨어지는 코드를 문제로 들고 와서 스터디 시간이나 주간동안 함수형으로
-              리팩터링 하는 시간을 가졌습니다.
+              - 가독성이 떨어지는 코드를 문제로 들고 와서 스터디 시간이나
+              주간동안 함수형으로 리팩터링 하는 시간을 가졌습니다.
             </li>
           </ul>
         </div>

@@ -1,6 +1,6 @@
 import { GetServerSideProps, GetStaticProps } from "next";
 import Head from "next/head";
-import Layout from "../components/layout";
+import Layout from "../components/Layout";
 import ProjectItem from "../components/projects/ProjectItem";
 import { DATABASE_ID, TOKEN } from "../config";
 
