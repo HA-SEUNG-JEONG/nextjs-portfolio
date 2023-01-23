@@ -36,29 +36,21 @@ interface RichText {
   ];
 }
 
-interface URL {
-  id: string;
-  type: string;
+interface URL extends RichText {
   url: string;
 }
 
-interface MultiSelect {
-  id: number;
-  type: string;
+interface MultiSelect extends RichText {
   multi_select: string[];
 }
 
-interface Title {
-  id: string;
-  type: string;
+interface Title extends RichText {
   title: {
     plain_text: string;
   }[];
 }
 
-export interface Page {
-  object: string;
-  id: string;
+export interface Page extends User {
   created_time: string;
   last_edited_time: string;
   created_by: User;
@@ -94,7 +86,13 @@ export interface Page {
   results: string;
 }
 
-const Project = ({ projects }: { projects: any }) => {
+interface ProjectProps {
+  projects: {
+    results: Page[];
+  };
+}
+
+const Project = ({ projects }: ProjectProps) => {
   return (
     <Layout>
       <div className="mb-10 flex min-h-screen flex-col items-center justify-center px-5">
@@ -128,7 +126,10 @@ export const getServerSideProps: GetServerSideProps = async () => {
     }),
   };
 
-  const response = await fetch(`https://api.notion.com/v1/databases/${DATABASE_ID}/query`, options);
+  const response = await fetch(
+    `https://api.notion.com/v1/databases/${DATABASE_ID}/query`,
+    options
+  );
   const projects = await response.json();
 
   return {
