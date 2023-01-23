@@ -1,4 +1,4 @@
-import { GetServerSideProps, GetStaticProps } from "next";
+import { GetServerSideProps } from "next";
 import Head from "next/head";
 import Layout from "../components/Layout";
 import ProjectItem from "../components/projects/ProjectItem";
