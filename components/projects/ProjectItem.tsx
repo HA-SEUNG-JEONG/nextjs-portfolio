@@ -13,7 +13,7 @@ const ProjectItem = ({ data }: { data: Page }) => {
   const end = data.properties.period.date.end;
   return (
     <article className="project-card">
-      <section className="w-full">
+      <section className="mx-auto w-96">
         <Image
           className="rounded-t-xl"
           src={imgSrc}
@@ -28,7 +28,7 @@ const ProjectItem = ({ data }: { data: Page }) => {
         />
       </section>
 
-      <section className="flex w-full flex-col p-4">
+      <section className="flex w-full flex-col p-10">
         <h1 className="text-xl font-bold">{projectTitle}</h1>
         <section className="flex flex-col space-y-2">
           <h3 className="text-md mt-3">{description}</h3>
