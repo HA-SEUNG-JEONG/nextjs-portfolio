@@ -1,6 +1,6 @@
 import Image from "next/legacy/image";
 import Link from "next/link";
-import { Page } from "../../pages/projects";
+import { Page } from "../../pages/project";
 
 const ProjectItem = ({ data }: { data: Page }) => {
   const projectTitle = data.properties.name.title[0].plain_text;
