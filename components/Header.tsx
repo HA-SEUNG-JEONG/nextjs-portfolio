@@ -27,9 +27,9 @@ const Header = () => {
               Home
             </span>
           </Link>
-          <Link href="/projects">
+          <Link href="/project">
             <span className="text-[#343232] hover:text-gray-500 dark:text-[#DEDCE8] dark:hover:text-gray-400">
-              Projects
+              Project
             </span>
           </Link>
           <Link className="" href="/skills">
