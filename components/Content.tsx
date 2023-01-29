@@ -26,7 +26,7 @@ const Content = () => {
             priority
             width={500}
             height={500}
-            src="../public/증명사진.jpg"
+            src="https://avatars.githubusercontent.com/u/88266129?v=4"
             alt="profile"
             quality={100}
           />
