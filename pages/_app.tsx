@@ -5,7 +5,7 @@ import { Roboto } from "@next/font/google";
 
 const roboto = Roboto({
   subsets: ["vietnamese"],
-  weight: ["400", "700"],
+  weight: "400",
 });
 
 export default function App({ Component, pageProps }: AppProps) {
