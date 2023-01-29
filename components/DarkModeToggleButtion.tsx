@@ -5,7 +5,7 @@ const DarkModeToggleButtion = () => {
   return (
     <>
       <button
-        title="toggle"
+        title="toggle" //title로 11% 접근성 증가 87-97
         type="button"
         onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
         className="mt-4 inline-flex items-center rounded border-0 bg-gray-100 py-1 px-3 text-base hover:bg-gray-50 hover:text-orange-500 focus:outline-none
