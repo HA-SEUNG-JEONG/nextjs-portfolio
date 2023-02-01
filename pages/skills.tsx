@@ -4,9 +4,9 @@ const skill = () => {
   return (
     <>
       <Header />
-      <div className="grid grid-cols-4 gap-5 p-32 dark:bg-slate-800 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3">
+      <div className="mobile:grid mobile:grid-cols-1 grid grid-cols-3 gap-5 p-32 dark:bg-slate-800 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3">
         <div className="h-60 overflow-hidden rounded bg-slate-700 shadow-xl">
-          <div className="px-6 py-4">
+          <div className="mobile:px-2 mx-2 py-4">
             <div className="mb-2 text-xl font-bold">
               <span className="text-[#EBEB09]">HTML</span>
             </div>
@@ -20,8 +20,8 @@ const skill = () => {
             </ul>
           </div>
         </div>
-        <div className="h-60 overflow-hidden rounded bg-slate-700 shadow-xl">
-          <div className="px-6 py-4">
+        <div className="w-full h-60 overflow-hidden rounded bg-slate-700 shadow-xl">
+          <div className="mobile:px-2 mx-2 py-4 mobile:max-h-full mobile:overflow-scroll 2xl:overflow-hidden">
             <div className="mb-2 text-xl font-bold">
               <span className="text-[#EBEB09]">CSS</span>
             </div>
@@ -34,8 +34,8 @@ const skill = () => {
                 적절한 페이지에 반응형 디자인 적용이 가능합니다.
               </li>
               <li className="text-base text-gray-300">
-                UI/UX 관점에서 어떻게 하면 사용자에게 더 좋은 서비스를 제공할지
-                고민하고 있습니다.
+                UI/UX 관점에서 어떻게 하면 사용자에게 <br /> 더 좋은 서비스를
+                제공할지 고민하고 있습니다.
               </li>
               <li className="text-base text-gray-300">
                 사용 가능한 CSS 프레임워크 및 라이브러리 : Tailwind CSS,
@@ -45,7 +45,7 @@ const skill = () => {
           </div>
         </div>
         <div className="h-60 overflow-hidden rounded bg-slate-700 shadow-xl">
-          <div className="px-6 py-4">
+          <div className="mobile:px-2 mx-2 py-4 mobile:max-h-full mobile:overflow-scroll 2xl:overflow-hidden">
             <div className="mb-2 text-xl font-bold">
               <span className="text-[#EBEB09]">JavaScript</span>
             </div>
@@ -64,7 +64,7 @@ const skill = () => {
         </div>
 
         <div className="h-60 overflow-hidden rounded bg-slate-700 shadow-xl">
-          <div className="px-6 py-4">
+          <div className="mobile:px-2 mx-2 py-4 mobile:max-h-full mobile:overflow-scroll 2xl:overflow-hidden">
             <div className="mb-2 text-xl font-bold">
               <span className="text-[#EBEB09]">React</span>
             </div>
@@ -80,7 +80,7 @@ const skill = () => {
           </div>
         </div>
         <div className="h-60 overflow-hidden rounded bg-slate-700 shadow-xl">
-          <div className="px-6 py-4">
+          <div className="mobile:px-2 mx-2 py-4 mobile:max-h-full mobile:overflow-scroll 2xl:overflow-hidden">
             <div className="mb-2 text-xl font-bold">
               <span className="text-[#EBEB09]">TypeScript</span>
             </div>
@@ -98,7 +98,7 @@ const skill = () => {
           </div>
         </div>
         <div className="h-60 overflow-hidden rounded bg-slate-700 shadow-xl">
-          <div className="px-6 py-4">
+          <div className="mobile:px-2 mx-2 py-4 mobile:max-h-full mobile:overflow-scroll 2xl:overflow-hidden">
             <div className="mb-2 text-xl font-bold">
               <span className="text-[#EBEB09]">UI/UX</span>
             </div>

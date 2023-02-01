@@ -8,8 +8,8 @@ const DarkModeToggleButtion = () => {
         title="toggle" //title로 11% 접근성 증가 87-97
         type="button"
         onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
-        className="mt-4 inline-flex items-center rounded border-0 bg-gray-100 py-1 px-3 text-base hover:bg-gray-50 hover:text-orange-500 focus:outline-none
-    dark:bg-slate-600 dark:text-slate-400 dark:hover:bg-slate-700 dark:hover:text-yellow-300 md:mt-0">
+        className="mt-4  inline-flex items-center rounded border-0 bg-gray-300 py-1 px-3 text-base hover:bg-gray-400 hover:text-orange-500 focus:outline-none
+    dark:bg-slate-600 dark:hover:bg-slate-700 dark:text-slate-400  dark:hover:text-yellow-300 md:mt-0">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           className="visible h-5 w-5 dark:invisible dark:h-0 dark:w-0"

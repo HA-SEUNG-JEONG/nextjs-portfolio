@@ -12,7 +12,7 @@ const ProjectItem = ({ data }: { data: Page }) => {
   const start = data.properties.period.date.start;
   const end = data.properties.period.date.end;
   return (
-    <article className="project-card">
+    <article className="project-card mobile:h-full mobile:relative mobile:bottom-0 -top-10">
       <section className="mx-auto w-96">
         <Image
           className="rounded-t-xl"
@@ -40,7 +40,7 @@ const ProjectItem = ({ data }: { data: Page }) => {
           </Link>
         </section>
 
-        <section className="mt-2 flex items-start space-x-2">
+        <section className="mt-2 flex items-start space-x-2 w-screen">
           {tags.map((tag: any) => (
             <h1
               className="w-30 rounded-md bg-sky-200 px-2 py-1 dark:bg-sky-700"
