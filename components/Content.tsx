@@ -14,8 +14,10 @@ const Content = () => {
             정하승입니다.
           </h1>
           <div className="flex justify-center">
-            <button className="inline-flex rounded border-0 bg-[#0C0FB0] py-2 px-6 text-lg hover:bg-[#31339B] focus:outline-none">
-              <Link className="text-[#DBDCE6] dark:text-white" href="/project">
+            <button className="inline-flex rounded border-0 bg-[#0C0FB0] py-2 px-6 text-lg hover:opacity-100 focus:outline-none">
+              <Link
+                className="text-[#DBDCE6] hover:text-[#a0a2b1] dark:text-white "
+                href="/project">
                 프로젝트 보러가기
               </Link>
             </button>
