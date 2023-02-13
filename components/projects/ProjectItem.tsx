@@ -32,10 +32,14 @@ const ProjectItem = ({ data }: { data: Page }) => {
         <h1 className="text-xl font-bold">{projectTitle}</h1>
         <section className="flex flex-col space-y-2">
           <h3 className="text-md mt-3">{description}</h3>
-          <Link className="hover:text-slate-300" href={deployLink}>
+          <Link
+            className="text-slate-400 hover:text-slate-100"
+            href={deployLink}>
             배포 링크
           </Link>
-          <Link className="hover:text-slate-300" href={githubLink}>
+          <Link
+            className="text-slate-400 hover:text-slate-100"
+            href={githubLink}>
             깃허브 링크
           </Link>
         </section>
