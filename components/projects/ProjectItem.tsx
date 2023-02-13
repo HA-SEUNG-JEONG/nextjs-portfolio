@@ -12,15 +12,15 @@ const ProjectItem = ({ data }: { data: Page }) => {
   const start = data.properties.period.date.start;
   const end = data.properties.period.date.end;
   return (
-    <article className="project-card mobile:h-full mobile:relative mobile:bottom-0 -top-10">
-      <section className="mx-auto w-96">
+    <article className="project-card mobile:h-full mobile:bottom-0 -top-10">
+      <section className="mx-auto w-96 mobile:relative mobile:right-5">
         <Image
           className="rounded-t-xl"
           src={imgSrc}
           alt="coverImage"
           quality={100}
           width={50}
-          height={50}
+          height={35}
           layout="responsive"
           objectFit="contain"
           placeholder="blur"
@@ -28,7 +28,7 @@ const ProjectItem = ({ data }: { data: Page }) => {
         />
       </section>
 
-      <section className="flex w-full flex-col p-10">
+      <section className="flex w-full flex-col p-10 mobile:relative mobile:right-4 dark:mobile:relative dark:mobile:right-8">
         <h1 className="text-xl font-bold">{projectTitle}</h1>
         <section className="flex flex-col space-y-2">
           <h3 className="text-md mt-3">{description}</h3>
