@@ -4,7 +4,7 @@ const skill = () => {
   return (
     <>
       <Header />
-      <div className="mobile:grid mobile:grid-cols-1 grid grid-cols-3 gap-5 p-32 dark:bg-slate-800 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3">
+      <div className="mobile:grid mobile:grid-cols-1 grid grid-cols-3 gap-5 p-[10.5rem] dark:p-[10.5rem] dark:bg-slate-800 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3">
         <div className="h-60 overflow-hidden rounded bg-slate-700 shadow-xl">
           <div className="mobile:px-2 mx-2 py-4">
             <div className="mb-2 text-xl font-bold">

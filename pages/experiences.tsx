@@ -5,7 +5,7 @@ import Layout from "../components/Layout";
 const experience = () => {
   return (
     <Layout>
-      <div className="flex min-h-screen flex-col items-center justify-center px-5">
+      <div className="flex min-h-[90vh] dark:min-h-[91vh] flex-col items-center justify-center px-5">
         <Head>
           <title>정하승의 포트폴리오</title>
           <meta name="description" content="portfolio" />

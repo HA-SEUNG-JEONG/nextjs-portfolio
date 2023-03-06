@@ -95,7 +95,7 @@ interface ProjectProps {
 const Project = ({ projects }: ProjectProps) => {
   return (
     <Layout>
-      <div className="mb-10 flex min-h-screen flex-col items-center justify-center px-5">
+      <div className="mb-10 flex min-h-[86.5vh] dark:min-h-[86.5vh] flex-col items-center justify-center px-5">
         <Head>
           <title>정하승의 포트폴리오</title>
           <meta name="description" content="portfolio" />
